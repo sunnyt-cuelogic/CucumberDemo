@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Gmail Login",
+        "description": "",
+        "id": "login-to-gmail;gmail-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5101666552,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to gmail page",
+            "match": {
+              "location": "loginTest.i_go_to_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3698824861,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to login url",
+            "match": {
+              "location": "loginTest.login_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1635327160,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter username and password",
+            "match": {
+              "location": "loginTest.enter_user_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 424950582,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should not be able to login",
+            "match": {
+              "location": "loginTest.invalid_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to Gmail",
+    "description": "I want to test the login to Gmail",
+    "id": "login-to-gmail",
+    "keyword": "Feature",
+    "uri": "LogIn_Test.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@smoke"
+      }
+    ]
+  }
+]

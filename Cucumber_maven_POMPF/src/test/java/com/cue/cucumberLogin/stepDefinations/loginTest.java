@@ -22,7 +22,8 @@ public class loginTest {
 	@Given("^I go to gmail page$")
 	public void i_go_to_Home_Page() throws Throwable {
 		System.out.println("INSIDE @Given");
-		System.setProperty("webdriver.chrome.driver", "C:\\JARS\\driver\\chromedriver.exe");
+		System.out.println(System.getProperty("user.dir")+"\\JARS\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\JARS\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		// driver.get("https://gmail.com");
